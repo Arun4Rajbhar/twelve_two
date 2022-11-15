@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script src="jquery-ui.js" type="text/javascript"></script>
+    
+    <style>
+        #drag{
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(red,blue);
+        }
+        #res{
+            width: 400px;
+            height: 400px;
+            background-size: cover;
+            
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="drag">hi and bye</div><br><br>
+    <img src="img1.jpg" id="res"><br><br>
+    <div id="aco">
+        <h1>hello</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eaque asperiores quam consequatur nostrum labore animi temporibus non, deserunt magnam. Fuga tenetur quis voluptatem expedita! Odio dolorem iure animi expedita?</p>
+        <h1>bye</h1>
+        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, labore quas. Quisquam ipsum vitae repellendus, facilis sapiente explicabo molestias, assumenda voluptas aliquid exercitationem dolore nobis similique nisi debitis nostrum dolores.</b>
+        <h1>good bye</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ut consectetur totam accusantium earum unde. Doloremque, nihil? Consequatur harum facere error obcaecati, sunt architecto exercitationem quam natus eligendi porro voluptatum.</p>
+    </div><br><br><br>
+    <div id="dia">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quos asperiores, molestiae expedita dignissimos necessitatibus eaque, autem illum non et tempora ex repudiandae veritatis. Dolorum explicabo mollitia expedita atque. Eaque.</div><br>
+    <div id="btn">hi sovit</div>
+   
+    
+    <script>
+        $(function(){
+            $("#drag").draggable();
+            $("#res").resizable();
+            $("#aco").accordion();
+            $("#btn").button();
+            
+            $("#btn").click(function(){
+                $("#dia").dialog();
+            })
+
+            
+           
+           
+
+        })
+    
+    </script>
+    
+</body>
+</html>

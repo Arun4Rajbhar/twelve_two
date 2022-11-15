@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  id="div">i am div</div><br>
+
+    <p  class="para">i am para</p><br>
+
+    <div class="para">hello</div>
+
+    <h1>i am heading</h1><br>
+
+    <button onclick="btn1()">div</button>
+    <button onclick="btn2()">para</button>
+    <button onclick="btn3()">heading</button>
+    <button onclick="btn4()">div</button>
+
+    <script>
+       function btn1(){
+            document.getElementById("div").innerHTML="i am clicked div"
+        }
+        
+        function btn2(){
+            var a=document.getElementsByClassName(" para");
+            a[0].innerHTML="i am clicked para"
+            
+           
+        }
+         function btn3(){
+            
+           var b= document.getElementsByTagName("h1");
+           
+          
+           b[0].innerHTML="i am clicked heading1"
+           
+         
+        }
+        function btn4(){
+            
+            var b= document.getElementsByClassName("para");
+            
+           
+            
+            b[1].innerHTML="i am clicked div"
+          
+         }
+
+    </script>
+
+</body>
+</html>

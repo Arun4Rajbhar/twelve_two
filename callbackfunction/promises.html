@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var p=prompt("enter a value");
+        var p1=prompt("enter a value");
+        let myPromise = new Promise(function(solve, Reject) {
+
+if(p>0){
+        solve("are u okay")
+}
+else{  
+         Reject("are u fine")
+}
+   
+});
+let myPromise1 = new Promise(function(solve, Reject) {
+
+if(p1<0){
+        solve("lesser than")
+}
+else{  
+         Reject("greater than")
+}
+   
+});
+
+Promise.all([myPromise1, myPromise]).then((values) => {
+  console.log(values);
+});
+
+
+// myPromise.then(
+//   function(v) {console.log(v)  },
+//   function(e) {  console.log(e)}
+// );
+    </script>
+</body>
+</html>

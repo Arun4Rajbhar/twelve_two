@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cal1{
+            background-color: blueviolet;
+            color: blanchedalmond;
+        }
+        .cal2{
+            background-color: rgb(43, 226, 46);
+            color: blanchedalmond;
+        }
+        .cal3{
+            background-color: rgb(226, 43, 86);
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div id="hi">this is me</div>
+
+    <div id="hello" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam eius minus obcaecati quas nulla provident similique explicabo repellendus velit, quasi excepturi cum ad quae cupiditate fugiat possimus eveniet! Ratione, excepturi?</div>
+
+    <div id="hello1" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam eius minus obcaecati quas nulla provident similique explicabo repellendus velit, quasi excepturi cum ad quae cupiditate fugiat possimus eveniet! Ratione, excepturi?</div>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, consequatur.</div>
+    <script>
+        document.getElementById("hi").addEventListener("click",()=>{
+            document.getElementById("hi").style.backgroundColor="blue"
+        })
+        document.querySelectorAll("div")[2].style.backgroundColor="crimson"
+
+        document.getElementById("hello").addEventListener("click",()=>{
+            document.getElementById("hello").classList.toggle("cal1")
+        })
+        document.getElementById("hello1").addEventListener("click",()=>{
+            document.getElementById("hello1").classList.forEach("cal1","cal2","cal3")
+        })
+
+    </script>
+</body>
+</html>

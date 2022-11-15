@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+        width: 100%;
+         background-color: #85888c;
+         padding: 10px;
+         display: block;
+         justify-content: center;
+         align-items: center;
+         position:static;
+         
+         color:beige;
+
+    }
+    .child_first{
+        background-color: #bcc0c4 ;
+        width:400px;
+        display: none;
+        
+
+    }
+    .parent:hover .child_first{
+        display: block;
+    }
+    h1{
+        display: block;
+    }
+    .nav{
+        position: sticky;
+        top: 10px;
+    
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="parent">
+        <div class="nav">Navigation</div>
+       
+        <div class="child_first">
+            <div>Home</div>
+            <div>About</div>
+            <div>contact</div>
+            <div>Data</div>
+            <div>Galary</div>
+        </div>
+    </div>
+</body>
+</html>
